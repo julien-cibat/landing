@@ -1,0 +1,119 @@
+/* style.css */
+body {
+	font-family: 'Overpass', sans-serif;
+	font-size: 18px;
+	color: #404042;
+}
+
+h1, h2, h3{
+	font-family: 'Chivo', sans-serif;
+}
+
+a {
+	color: #0D1EC6;
+	font-weight: bold;
+	text-decoration: none;
+	transition: .3s;
+}
+
+a:hover {
+	color: #CE2FAE;
+}
+
+.button-blue {
+	background-color: #1A47E2;
+	color: white;
+	padding: 12px 16px;
+	border-radius: 4px;
+	display: inline-block;
+	text-decoration: none;
+	transition: .3s;
+}
+.button-blue:hover {
+	background-color: #0D1EC6;
+	color: white;
+}
+
+.banner {
+	background-image: url(images/background.jpg);
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding: 100px 0px;
+}
+
+.banner h1 {
+	font-size: 40px;
+}
+
+.banner h3 {
+	opacity: 0.7;
+	margin-bottom: 40px;
+}
+.container {
+	margin: 40px 60px;
+}
+
+.cards-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
+}
+	
+.card-white {
+	background-color: white;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+	padding: 18px;
+	border-radius: 4px;
+	margin: 20px;
+	width: 200px;
+	text-align: center;
+}
+
+.card-white img {
+	width: 180px;
+	height: 180px;
+	border-radius: 4px;
+	object-fit: cover;
+}
+
+/* Cards media queries */
+@media (max-width: 800px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
+
+.footer {
+	background-color: #404042;
+	padding: 24px 0;
+	text-align: center;
+}
+
+.footer p{
+	color: white;
+}
